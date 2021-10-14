@@ -2,6 +2,22 @@
     text-align: center;
 }
 
+.boxContents{
+    padding: 15px;
+    background-color: rgba(223,101,51, 0.7);
+    width: auto;
+    text-align: center;
+    margin: 30px;
+}
+
+.tittleContents{
+    font-weight: bolder;
+}
+
 .contents{
+    margin: 10px;
     display: flex;
+    justify-content: center;
+    text-align: left;
+    
 }
