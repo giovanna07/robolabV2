@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    align-items: center;
+}
+
+.imgRobo{
+    align-items: center;
+}
+
+.ilustracao{
+    width: 500px;
+    height: 500px;
+}
+
+.btn{
+    height: 50px;
+    background-color: rgb(240, 182, 66);
+    color: rgb(102, 47, 47);
+    border: 0px;
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: rgb(235, 200, 130);
+}
