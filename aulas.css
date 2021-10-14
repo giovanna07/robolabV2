@@ -1,0 +1,49 @@
+#tittlePage{
+    text-align: center;
+}
+
+.boxContents{
+    padding: 15px;
+    background-color: rgba(223,101,51, 0.7);
+    width: auto;
+    text-align: center;
+    margin: 30px;
+}
+
+.tittleContents{
+    font-weight: bolder;
+}
+
+.contents{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+}
+
+.contentsButton{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(240, 182, 66);
+    color: rgb(102, 47, 47);
+    border: 0px;
+    border-radius: 3px;
+}
+
+.btn:hover{
+    background-color: rgb(235, 200, 130);
+}
+
+.txtArduino{
+    text-align: left;
+    margin-left: 110px;
+}
