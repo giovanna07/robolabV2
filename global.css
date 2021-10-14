@@ -20,6 +20,15 @@ header{
     grid-area: h;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gray;
+}
+
 header nav{
     display: flex;
     justify-content: space-around;
@@ -32,8 +41,12 @@ header nav li{
 .current{
     font-weight: bolder;
 }
+.current:hover{
+    color: white;
+}
 
 .hoverLi:hover{
+    color: white;
     font-weight: bolder;
 }
 
