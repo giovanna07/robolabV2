@@ -1,0 +1,33 @@
+#tittlePage{
+    text-align: center;
+}
+.pCentral{
+    text-align: center;
+}
+
+.midiaContents{
+    display: flex;
+    justify-content: center;
+}
+
+.boxContents{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(223,101,51, 0.7);
+    width: auto;
+    text-align: center;
+    margin: 30px;
+    width: 250px;
+    height: 60px;
+}
+
+.imgContact{
+    width: 55px;
+    height: 55px;
+}
+
+.comunica{
+    margin-left: 25px;
+    font-size: 25px;
+}
