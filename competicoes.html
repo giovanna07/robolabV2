@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="competicoes.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://kit.fontawesome.com/57dd07d2af.js" crossorigin="anonymous"></script>
+    <title>RoboLab Restinga</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logoHome">
+                    <a href="index"><i class="fas fa-robot logo"> RoboLab</i></a>
+                </div>
+                <div class="menus">
+                    <li>
+                        <ul><a class="hoverLi" href="index">Home</a></ul>
+                        <ul><a class="hoverLi" href="aulas">Aulas</a></ul>
+                        <ul><a class="current" href="competicoes">competições</a></ul>
+                        <ul><a class="hoverLi" href="">Patrocinadores</a></ul>
+                        <ul><a class="hoverLi" href="">Contatos</a></ul>
+                    </li>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h3 id="tittlePage">competições</h3>
+                <p>Após dois anos de trajetória, decidimos nos aventurar nas competições.<br>
+                    Nosso Laboratório segue se equipando para conseguir uma atuação cada vez melhor!<br>
+                    Os alunos ganham experiência sobre automação de robôs e sua programação.<br>
+                    O nosso objetivo inicialmente é participar da FLL(First Lego League), FTC(First Tech Challenge) e da OBR(Olimpiada<br>
+                    Brasileira de Robótica), e entren muitos outros!! 
+                </p>
+
+                <p>
+                    Clique nos botões abaixo para conferir as competições:
+                </p>
+                <div class="contentsButton">
+                    <button class="btn" onclick="window.location.href = '#modalOBR'">OBR</button>
+                    <button class="btn" onclick="window.location.href = '#modalFLL'">FLL</button>
+                    <button class="btn" onclick="window.location.href = '#modalFTC'">FTC</button>
+                </div>
+
+                <div id="modalOBR" class="modal">
+                    <a href="#fechar" title="Fechar" class="fechar">x</a>
+                    <h2 class="tittleModal">Olimpiada Brasileira de Robótica</h2>
+                    <p class="pModal">A Olimpíada Brasileira de Robótica (OBR) é uma das olimpíadas científicas brasileiras que utiliza-se da temática da robótica.<br>
+                        Tem o objetivo de estimular os jovens às carreiras científico-tecnológicas, identificar jovens talentosos e promover debates e atualizações no processo de ensino-aprendizagem brasileiro.
+                        A OBR destina-se a todos os estudantes de qualquer escola pública ou privada do ensino fundamental, médio ou técnico em todo o território nacional, e é uma iniciativa pública, gratuita e sem fins lucrativos.
+                    </p>
+                    <div class="btnsModal">
+                        <button class="btnModal" onclick="window.location.href = '#fechar'">Fechar</button>
+                        <button class="btnModal" onclick="window.location.href = 'http://www.obr.org.br/o-que-e-a-obr/'">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div id="modalFLL" class="modal">
+                    <a href="#fechar" title="Fechar" class="fechar">x</a>
+                    <h2 class="tittleModal">First Lego League</h2>
+                    <p class="pModal">O Torneio de Robótica FIRST® LEGO® League (FLL) é uma competição internacional voltada para crianças de 9 a 16 anos, realizada em parceria da FIRST® com o Grupo LEGO®, e desenvolvida para despertar o interesse dos alunos em temas como Ciências, Matemática e Tecnologia dentro do ambiente escolar, inspirando e desafiando crianças e jovens a pensarem como cientistas e engenheiros.
+                    </p>
+                    <div class="btnsModal">
+                        <button class="btnModal" onclick="window.location.href = '#fechar'">Fechar</button>
+                        <button class="btnModal" onclick="window.location.href = 'https://tecnologia.educacional.com.br/blog-robotica-e-stem/o-que-e-a-fll-descubra-como-funciona-o-torneio-de-robotica-da-first-lego-league/'">Saiba mais</button>
+                    </div>
+                </div>
+
+                <div id="modalFTC" class="modal">
+                    <a href="#fechar" title="Fechar" class="fechar">x</a>
+                    <h2 class="tittleModal">First Tech Challenge</h2>
+                    <p class="pModal">
+                        No First Tech Challenge (FTC), estudantes de 14 a 18 anos são desafiados a projetarem, programarem e construirem robôs capazes de realizar tarefas. Para isso, eles precisam aprender a trabalhar com máquinas e circuitos – os mesmos equipamentos utilizados por grandes engenheiros!
+                        Os robôs são construídos a partir de um kit de peças reutilizáveis, com tecnologia Android e podem ser codificados usando uma variedade de níveis de programação baseada em Java e Blocks.
+                    </p>
+                    <div class="btnsModal">
+                        <button class="btnModal" onclick="window.location.href = '#fechar'">Fechar</button>
+                        <button class="btnModal" onclick="window.location.href = 'http://www.portaldaindustria.com.br/sesi/canais/torneio-de-robotica/first-tech-challenge-brasil/'">Saiba mais</button>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <div class="midias">
+            <a href="https://www.facebook.com/robolab.restinga.1"><i class="fab fa-facebook-square redes"></i></a>
+            <a href="https://www.instagram.com/robolabrestinga/?utm_medium=copy_link"><i class="fab fa-instagram redes"></i></a>
+            <a href="robolab@restinga.ifrs.edu.br"><i class="fas fa-envelope redes"></i></a>
+            <a href="https://www.youtube.com/channel/UCL29JLVueqZs3pHW3Qr2UZg"><i class="fab fa-youtube redes"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -4,6 +4,7 @@ html, body{
     box-sizing: border-box;
     background: linear-gradient(180deg, #DF6533 0%, #F28A44 47.88%, #F04A06 100%);
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
