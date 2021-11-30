@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="modalExposicao.css">
+    <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/57dd07d2af.js" crossorigin="anonymous"></script>
     <title>RoboLab Restinga</title>
 </head>
@@ -47,22 +49,41 @@
                     Este espaço virtual é dedicado a Exposição de trabalhos que a equipe RoboLab Restinga<br>
                     vem desenvolvendo ao decorrer de sua caminhada.
                 </p>
-                <section class="modalJobs">
-                    <div>
-                        <video src="" width="300" height="168" controls loop poster="modalExposicao/roboToque.png"></video>
-                        <h3 class="tittleModal">Robo Lego - Toque!</h3>
+                <div class="container teste">
+                    <h2>Legos</h2>
+                    <div id="lego" class="owl-carousel owl-theme">
+                        <div class="item"><img src="modalExposicao/braco.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboCompeticao.jpeg" alt=""></div>
+                        <div class="item"><img src="modalExposicao/braco.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboToque.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboCompeticao.jpeg" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboToque.png" alt=""></div>
                     </div>
+                </div>
 
-                    <div>
-                        <video src="" width="300" height="168" controls loop poster="modalExposicao/roboCompeticao.jpeg"></video>
-                        <h3 class="tittleModal">Robo Lego - Competições!</h3>
+                <div class="container teste">
+                    <h2>Arduínos</h2>
+                    <div id="arduino" class="owl-carousel owl-theme">
+                        <div class="item"><img src="modalExposicao/braco.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboCompeticao.jpeg" alt=""></div>
+                        <div class="item"><img src="modalExposicao/braco.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboToque.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboCompeticao.jpeg" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboToque.png" alt=""></div>
                     </div>
+                </div>
 
-                    <div>
-                        <video src="" width="300" height="168"controls loop poster="modalExposicao/braco.png"></video>
-                        <h3 class="tittleModal">Arduino - Braço Robótico!</h3>
+                <div class="container teste">
+                    <h2>Raspberry</h2>
+                    <div id="raspberry" class="owl-carousel owl-theme">
+                        <div class="item"><img src="modalExposicao/braco.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboCompeticao.jpeg" alt=""></div>
+                        <div class="item"><img src="modalExposicao/braco.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboToque.png" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboCompeticao.jpeg" alt=""></div>
+                        <div class="item"><img src="modalExposicao/roboToque.png" alt=""></div>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
         <footer>
@@ -74,5 +95,89 @@
             </div>
         </footer>
     </div>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#lego").owlCarousel({
+                items:3,
+                loop:true,
+                margin:20,
+                nav: true,
+                navText:["Anterior", "Proximo"],
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause:true,
+                startPosition:[0],
+                slideBy: 1,
+                slideTransition: "ease-in",
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    360:{
+                        items: 2
+                    },
+                    1000:{
+                        items: 3
+                    }
+                }
+            });
+
+            $("#arduino").owlCarousel({
+                items:3,
+                loop:true,
+                margin:20,
+                nav: true,
+                navText:["Anterior", "Proximo"],
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause:true,
+                startPosition:[0],
+                slideBy: 1,
+                slideTransition: "ease-in",
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    360:{
+                        items: 2
+                    },
+                    1000:{
+                        items: 3
+                    }
+                }
+            });
+
+            $("#raspberry").owlCarousel({
+                items:3,
+                loop:true,
+                margin:20,
+                nav: true,
+                navText:["Anterior", "Proximo"],
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause:true,
+                startPosition:[0],
+                slideBy: 1,
+                slideTransition: "ease-in",
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    360:{
+                        items: 2
+                    },
+                    1000:{
+                        items: 3
+                    }
+                }
+            });
+        });
+        
+    </script>
 </body>
 </html>
